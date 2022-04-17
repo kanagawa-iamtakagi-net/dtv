@@ -48,7 +48,11 @@ services:
                 max-file: "3"
 
     epgstation:
+        container_name: epgstation
         image: ghcr.io/kanagawa-iamtakagi-net/epgstation:latest
+        build: 
+            context: ./epgstation
+            dockerfile: Dockerfile.debian
         volumes:
             - ./epgstation/config:/app/config
             - ./epgstation/data:/app/data
