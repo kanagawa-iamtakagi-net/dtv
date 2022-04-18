@@ -29,6 +29,7 @@ services:
                 max-size: 10m
 
     mysql:
+        container_name: mysql
         image: mariadb:10.5
         # image: mysql:8.0 # 囲み文字を使用する場合
         volumes:
