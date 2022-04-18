@@ -6,6 +6,8 @@
         - [kanagawa-iamtakagi-net/Mirakurun](https://github.com/kanagawa-iamtakagi-net/Mirakurun)
 - [l3tnun/EPGStation](https://github.com/l3tnun/EPGStation)
     - [kanagawa-iamtakagi-net/EPGStation](https://github.com/kanagawa-iamtakagi-net/EPGStation)
+- [tsukumijima/KonomiTV](https://github.com/tsukumijima/KonomiTV)
+    - [kanagawa-iamtakagi-net/KonomiTV](https://github.com/kanagawa-iamtakagi-net/KonomiTV)
 
 ## References
 - [l3tnun/docker-mirakurun-epgstation](https://github.com/l3tnun/docker-mirakurun-epgstation)
