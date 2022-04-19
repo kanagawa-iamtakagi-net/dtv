@@ -118,6 +118,6 @@ services:
             - external_network
 
 networks:
-  internal_network:
-    internal: true
-  external_network:
+    internal_network:
+        internal: true
+    external_network:
