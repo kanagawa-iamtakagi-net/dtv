@@ -29,7 +29,7 @@ services:
                 max-file: "1"
                 max-size: 10m
         networks:
-            - external_network
+            - proxy_network
 
     mysql:
         container_name: mysql
@@ -82,7 +82,7 @@ services:
         restart: always
         networks:
             - internal_network
-            - external_network
+            - proxy_network
     
     konomitv:
         image: konomitv
@@ -111,9 +111,9 @@ services:
         ports:
             - '7000:7000'
         networks:
-            - external_network
+            - proxy_network
 
 networks:
     internal_network:
         internal: true
-    external_network:
+    proxy_network:
