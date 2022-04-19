@@ -27,6 +27,8 @@ services:
             options:
                 max-file: "1"
                 max-size: 10m
+        networks:
+            - external_network
 
     mysql:
         container_name: mysql
@@ -47,6 +49,8 @@ services:
             options:
                 max-size: "10m"
                 max-file: "3"
+        networks:
+            - internal_network
 
     epgstation:
         container_name: epgstation
@@ -73,6 +77,9 @@ services:
 #         devices:
 #             - /dev/dri:/dev/dri
         restart: always
+        networks:
+            - internal_network
+            - external_network
     
     konomitv:
         image: konomitv
@@ -107,3 +114,10 @@ services:
               target: '/code/server/logs/'
         ports:
             - '7000:7000'
+        networks:
+            - external_network
+
+networks:
+  internal_network:
+    internal: true
+  external_network:
