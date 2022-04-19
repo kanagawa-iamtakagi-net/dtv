@@ -33,7 +33,7 @@ services:
         image: mariadb:10.5
         # image: mysql:8.0 # 囲み文字を使用する場合
         volumes:
-            - mysql-db:/var/lib/mysql
+            - ./mysql:/var/lib/mysql
         environment:
             MYSQL_USER: epgstation
             MYSQL_PASSWORD: epgstation
@@ -107,8 +107,3 @@ services:
               target: '/code/server/logs/'
         ports:
             - '7000:7000'
-
-volumes:
-    mysql-db:
-        driver: local
-

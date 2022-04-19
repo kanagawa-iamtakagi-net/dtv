@@ -11,9 +11,12 @@
 /epgstation/data/streamfiles/*.ts
 /epgstation/data/streamfiles/*.m3u8
 
-!.gitkeep
 epgstation/config/enc.js
 epgstation/config/epgUpdaterLogConfig.yml
 epgstation/config/serviceLogConfig.yml
 epgstation/config/EPGS-to-Discord.env
 epgstation/config/operatorLogConfig.yml
+
+mysql/*
+
+!.gitkeep
