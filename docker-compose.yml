@@ -59,7 +59,7 @@ services:
         image: ghcr.io/kanagawa-iamtakagi-net/epgstation:latest
         build: 
             context: ./epgstation
-            dockerfile: Dockerfile.debian
+            dockerfile: Dockerfile
         volumes:
             - /etc/localtime:/etc/localtime:ro
             - ./epgstation/config:/app/config
