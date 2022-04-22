@@ -16,6 +16,9 @@
 - [nns779/px4_drv](https://github.com/nns779/px4_drv)
 
 ## Notes
+- 以下のデバイスで、動作確認をしています。
+    - チューナー: PX-W3U4
+    - カードリーダー: SCR3310/v2.0
 - Mirakurun 起動時、Entrypoint (`container-init.sh`) 呼び出し時に `Unexpected token "export"` 等のエラーが発生する場合、`chmod +x container-init.sh` 等で権限を付与してから、コンテナを立ち上げると成功する場合があります。
 
 ## LICENSE
