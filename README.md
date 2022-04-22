@@ -12,6 +12,10 @@
 ## References
 - [l3tnun/docker-mirakurun-epgstation](https://github.com/l3tnun/docker-mirakurun-epgstation)
 - [yude/EPGS-to-Discord-v2](https://github.com/yude/EPGS-to-Discord-v2)
+- [nns779/px4_drv](https://github.com/nns779/px4_drv)
+
+## Notes
+- Mirakurun 起動時、 Entrypoint (`container-init.sh`) 呼び出し時に `Unexpected token "export"` 等のエラーが発生する場合、`chmod +x container-init.sh` 等で権限を付与してから、コンテナを立ち上げると成功する場合があります。
 
 ## LICENSE
 MIT License.
