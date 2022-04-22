@@ -67,7 +67,7 @@ services:
             - ./epgstation/thumbnail:/app/thumbnail
             - ./epgstation/logs:/app/logs
             - ./epgstation/config/EPGS-to-Discord.env:/app/EPGS-to-Discord-v2/.env
-            - /mnt/disk1/recorded:/app/recorded
+            - /mnt/data1/recorded:/app/recorded
         environment:
             TZ: "Asia/Tokyo"
         depends_on:
