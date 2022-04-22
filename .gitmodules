@@ -1,3 +1,6 @@
 [submodule "KonomiTV"]
 	path = KonomiTV
 	url = https://github.com/kanagawa-iamtakagi-net/KonomiTV
+[submodule "px4_drv"]
+	path = px4_drv
+	url = https://github.com/nns779/px4_drv
