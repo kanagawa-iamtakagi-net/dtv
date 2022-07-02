@@ -85,7 +85,7 @@ services:
             - proxy_network
     
     konomitv:
-        image: konomitv
+        image: konomitv:latest
         container_name: KonomiTV
         restart: always
         environment:
