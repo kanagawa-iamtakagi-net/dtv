@@ -99,15 +99,15 @@ services:
                     #devices:
                         #- driver: nvidia
                           #capabilities: [compute, utility, video]
-        #devices:
-            #- '/dev/dri:/dev/dri'
+        devices:
+            - '/dev/dri:/dev/dri'
         volumes:
             - /etc/localtime:/etc/localtime:ro
             - ./KonomiTV/config.yaml:/code/config.yaml
             - ./KonomiTV/client/:/code/client/
             - ./KonomiTV/server/app/:/code/server/app/
             - ./KonomiTV/server/data/:/code/server/data/
-            - ./KonomiTV/server/logs/:/code/server/logs/'
+            - ./KonomiTV/server/logs/:/code/server/logs/
         ports:
             - '7000:7000'
         networks:
